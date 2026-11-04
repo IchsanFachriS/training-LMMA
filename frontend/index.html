@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGIS LMMA</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="map"></div>
+
+  <aside id="panel">
+    <h1>WebGIS LMMA</h1>
+
+    <h2>Daftar lokasi</h2>
+    <ul id="daftar"></ul>
+    <button id="tombol-404">Coba GET /api/lokasi/999</button>
+
+    <h2>Request terakhir</h2>
+    <div id="request">Belum ada request</div>
+
+    <h2>Response body</h2>
+    <pre id="response">-</pre>
+  </aside>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

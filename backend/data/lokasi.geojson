@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [107.6098, -6.9147] },
+      "properties": { "id": 1, "nama": "Kantor Bandung", "jenis": "kantor" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [107.6186, -6.9022] },
+      "properties": { "id": 2, "nama": "Gudang Utara", "jenis": "gudang" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [107.5975, -6.9260] },
+      "properties": { "id": 3, "nama": "Outlet Selatan", "jenis": "outlet" }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[107.6098, -6.9147], [107.6140, -6.9080], [107.6186, -6.9022]]
+      },
+      "properties": { "id": 4, "nama": "Rute Kantor - Gudang", "jenis": "rute" }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [107.6000, -6.9100], [107.6200, -6.9100],
+          [107.6200, -6.9200], [107.6000, -6.9200],
+          [107.6000, -6.9100]
+        ]]
+      },
+      "properties": { "id": 5, "nama": "Area Layanan Pusat", "jenis": "area" }
+    }
+  ]
+}
