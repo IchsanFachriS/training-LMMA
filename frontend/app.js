@@ -1,5 +1,3 @@
-// Alamat API. Karena frontend disajikan oleh backend yang sama,
-// cukup pakai path relatif.
 const API_URL = "/api/lokasi";
 
 // 1. Peta dasar

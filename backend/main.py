@@ -1,11 +1,3 @@
-"""
-Backend contoh Minggu 1.
-
-Tujuannya hanya memperlihatkan alur request -> response.
-Data dibaca dari file GeoJSON, belum dari database (database mulai Minggu 2).
-Detail FastAPI (routing, parameter, validasi) dibahas di Minggu 4-5.
-"""
-
 import json
 from pathlib import Path
 
@@ -17,8 +9,6 @@ BASE_DIR = Path(__file__).resolve().parent
 FRONTEND_DIR = BASE_DIR.parent / "frontend"
 DATA_FILE = BASE_DIR / "data" / "lokasi.geojson"
 
-# Data dimuat sekali ke memori saat server menyala.
-# Data hasil POST hilang lagi saat server dimatikan.
 data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
 
 app = FastAPI(title="WebGIS Minggu 1")
@@ -59,6 +49,4 @@ def tambah_lokasi(lokasi: LokasiBaru):
     return feature
 
 
-# Frontend disajikan dari server yang sama, jadi cukup buka http://localhost:8000
-# Baris ini harus paling bawah agar tidak menutupi route /api.
 app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
